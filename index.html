@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <form name="calc">
+                <div class="display" id="dis">
+                    <!-- <input type="button" name="clc" value="c" onclick="resetDisplay()"> tried to add reset button-->
+                    <input type="text" placeholder="0" name="result" />
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <input type="button" name="btn7" value="7" onClick="calcNumbers(btn7.value);">
+                        <input type="button" name="btn8" value="8" onClick="calcNumbers(btn8.value)">
+                        <input type="button" name="btn9" value="9" onClick="calcNumbers(btn9.value)">
+                        <input type="button" name="addbtn" value="+" onClick="calcNumbers(addbtn.value);addOp()">
+                    </div>
+
+                    <div class="row">
+                        <input type="button" name="btn4" value="4" onClick="calcNumbers(btn4.value)">
+                        <input type="button" name="btn5" value="5" onClick="calcNumbers(btn5.value)">
+                        <input type="button" name="btn6" value="6" onClick="calcNumbers(btn6.value)">
+                        <input type="button" name="subbtn" value="-" onClick="calcNumbers(subbtn.value);subOp()">
+                    </div>
+
+                    <div class="row">
+                        <input type="button" name="btn1" value="1" onClick="calcNumbers(btn1.value)">
+                        <input type="button" name="btn2" value="2" onClick="calcNumbers(btn2.value)">
+                        <input type="button" name="btn3" value="3" onClick="calcNumbers(btn3.value)">
+                        <input type="button" name="mulbtn" value="*" onClick="calcNumbers(mulbtn.value);mulOp()">
+                    </div>
+
+                    <div class="row">
+                        <input type="button" name="btn0" value="0" onClick="calcNumbers(btn0.value)">
+                        <input type="button" name="potbtn" value="." onClick="calcNumbers(potbtn.value);decimalOp()">
+                        <input type="button" name="divbtn" value="/" onClick="calcNumbers(divbtn.value);divOp()">
+                        <input type="button" id="eqbtn" value="=" onClick="evalResult();displayColor()">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
